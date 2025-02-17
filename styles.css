@@ -1,0 +1,569 @@
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 120px; /* Space for the footer */
+  margin: 0; /* Reset margins */
+  background-color: #b3d9f0; /* Light beige background */
+  color: #512260; 
+}
+
+/* Resetting default browser styles (if needed) */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+position: fixed; /* Fixed position to stay at the top */
+top: 0; /* Align to the top */
+left: 0; /* Align to the left */
+right: 0; /* Align to the right */
+padding: 10px 0; /* Padding for navbar */
+z-index: 1000; /* Higher z-index to stay on top */
+width: 100%; /* Stretches across the top of the screen */  
+background-color: #f7e6a4; /* Light yellow background */
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);                    
+}
+
+/* General style rule set for all items in ul */
+.navbar ul {
+list-style: none; /* Remove bullets */
+padding: 0; /* Remove padding */
+margin: 0; /* Remove margin */
+display: flex; /* Use flexbox for horizontal layout */
+justify-content: flex-end; /* Align items to the right */
+align-items: center; /* Center items vertically */
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+margin: 0 10px; /* Add space between items */
+}
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+font-family: Arial, sans-serif; /* Font family */
+font-size: 16px; /* Font size */
+text-decoration: none; /* Remove underline */
+padding: 10px 15px; /* Padding for clickable area */
+transition: color 0.3s; /* Smooth color transition */
+color: #512260; 
+font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  background-color: #9034af; /* Light cream background on hover */
+  color: white; 
+  border-radius: 5px;
+}
+
+/* Header styles */
+.header-container {
+display: flex; /* Use Flexbox */
+flex-direction: row; /* Arrange items in a row */
+align-items: center; /* Center items vertically */
+justify-content: space-between; /* Space out items evenly */
+margin: 20px 0; /* Margin for spacing */
+z-index: 1;
+}
+
+.header-container h1 {
+  font-family: 'Dancing Script', cursive; /* Elegant script font for header title */
+  font-size: 2.8rem; /* Larger font for the header title */
+  color: #512260; 
+  margin: 0;
+  text-align: center;
+}
+
+.header-container h3 {
+  font-family: Arial, sans-serif; /* Keep secondary text simple */
+  font-size: 1.5rem;
+  color: #512260; /* Match the theme */
+}
+
+/* Logo image styles for the first header item */
+.header-item:nth-of-type(1) img {
+position: relative;
+padding: 2px;
+width: 90px; /* Adjust this value as needed */
+height: auto; /* Maintain aspect ratio */
+border-radius: 50%; /* Keep circular if desired */
+z-index: 1; /* Set lower z-index than the navbar */
+}
+
+/* Header content styles for the second header item */
+.header-item:nth-of-type(2) {
+text-align: left; /* Align text to the left */
+margin-left: 10px; /* Space between logo and text */
+flex-grow: 1; /* Allow it to grow to fill available space */
+}
+
+/* Container for text and buttons */
+.header-text-button-container {
+display: flex; /* Use Flexbox to arrange text and buttons in a row */
+align-items: center; /* Align items vertically */
+max-width: 1600px;
+margin: 10px auto;
+text-align: justify;
+}
+
+.text-button-container {
+  display: flex; /* Use Flexbox to arrange text and buttons in a row */
+  align-items: center; /* Align items vertically */
+}
+
+/* Button styles */
+.header-button {
+display: flex; /* Ensure buttons are inline */
+gap: 10px; /* Space between buttons */
+margin-left: 15px; /* Space between the text and buttons */
+}
+
+/* Individual button styles */
+.shadow-button {
+font-size: 16px; /* Font size */
+padding: 10px 20px; /* Padding inside the button */
+border: none; /* Remove border */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer; /* Pointer on hover */
+background-color: #512260; 
+color: #fff; /* White text */
+border-radius: 8px;
+font-weight: bold;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shadow-button:hover {
+  background-color: #9034af; 
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.main-content{
+  max-width: 1500px;
+  margin: 10px auto;
+  text-align: justify;
+}
+
+/* Footer styling */
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #f7e6a4; 
+text-align: center;
+padding: 20px;
+}
+
+.footer p{
+color: #3d2807;
+text-align: center;
+}
+
+/* Footer link styling */
+.footer a {
+color: #3d2807; /* White color for links */
+text-decoration: none; /* Removes default underline */
+margin: 0 10px; /* Adds spacing between the links */
+}
+
+/* Footer link hover effect */
+.footer a:hover {
+text-decoration: underline; /* Adds underline on hover */
+}
+
+/*
+Style Text: Add style rules for any headings (h1-6),
+paragraphs and links
+*/
+
+h1,h2{
+font-weight: bold;
+padding: 5px;
+margin: 10px;
+color: #512260;
+}
+
+h3,h4{
+margin: 20px 0;
+padding: 5px;
+color: #512260;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333; /* Dark gray text */
+  line-height: 1.6; /* Increases space between lines for better readability */
+  text-align: justify; /* Aligns text to both left and right */
+  margin: 10px;
+}
+
+.news a{
+text-decoration: none; /* Removes the underline from links */
+color: #512260; 
+font-weight: bold;
+}
+
+.news a:link {
+color: #3d2807;
+text-decoration: none;
+font-weight: bold;
+}
+
+.news a:hover {
+color: #3d2807;
+text-decoration: underline; /* Adds underline on hover */
+}
+
+.news a:visited {
+color: #551a8b; /* Changes color for visited links */
+}
+
+/*
+Style Lists: Styles added to the ol or ul style rulesets affect the entire
+list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ul {
+list-style-type: none; /* Removes default bullets */
+margin: 20px 0;
+padding-left: 0;
+}
+
+ul li {
+padding: 10px;
+transition: background-color 0.3s ease; /* Smooth hover effect */
+background-color: #ffffff; /* White list item background */
+border-left: 4px solid #512260; 
+margin-bottom: 8px;
+border-radius: 5px;
+}
+
+ul li:hover {
+background-color: #e0e0e0; /* Changes background on hover */
+}
+
+
+/*
+Style Buttons: Add style rules for any headings (h1-6),
+paragraphs and links
+*/
+
+button {
+background-color:  #512260;
+border: none;
+color: white;
+font-size: 16px;
+text-align: center;
+padding: 15px 32px;
+cursor: pointer;
+}
+
+iframe{
+position: relative;
+left: 100px;
+}
+
+/* Select and style elements by class name or ID */
+
+.statistics{
+width: 600px;  /* Adjust the width as needed */
+height: auto;  /* Keeps the aspect ratio */
+max-width: 100%; /* Responsive images */
+height: auto; /* Maintain aspect ratio */
+}
+
+.impact{
+width: 300px;
+height:auto;
+position: relative;
+left: 100px;
+max-width: 100%; /* Responsive images */
+height: auto; /* Maintain aspect ratio */
+}
+
+.statistics,
+.impact {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add depth */
+    margin-bottom: 20px;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+background-color: black;  /* Changes the background to black */
+color: white;             /* Changes the text color to white */
+}
+
+/* Optional additional styles */
+.dark-mode a {
+color: rgb(15, 73, 166);    /* Changes link color to light blue */
+}
+
+.dark-mode li{
+color: black;
+}
+
+.dark-mode p{
+color: white;
+}
+
+.dark-mode button {
+background-color: #512260;   /* Darkens button background */
+color: white;             /* Ensures button text is visible */
+}
+.dark-mode .petition{
+background-color: black;
+}
+
+.dark-mode .form-group label{
+color: white;
+}
+
+.dark-mode footer a{
+color: #512260;
+}
+
+.dark-mode footer p{
+  color: #512260;
+  }
+
+/* Add style to button */
+#theme-button {
+  background-color: #512260;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0px 10px;
+}
+
+/* Optional hover effect */
+#theme-button:hover {
+background-color: #9034af;
+border-color: #ccc;             /* Lightens border on hover */
+}
+
+/* Petition Section Styling */
+.petition {
+margin-top: 20px;
+text-align: center;
+background-color: #f7e6a4; /* Light yellow background */
+border-radius: 10px;
+padding: 25px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.petition h2 {
+margin-bottom: 15px;
+font-family: 'Dancing Script', cursive; /* Add script font for elegance */
+font-size: 2rem;
+color: #512260; 
+}
+
+/* Petition Container Styling */
+.petition-container {
+display: flex;
+flex-direction: row;
+gap: 20px;
+width: 100%;
+padding-bottom: 50px;
+}
+
+.petition-para {
+width: 55%;
+padding-right: 10px;
+}
+
+.signatures {
+width: 45%;
+padding-right: 10px;
+text-align: left;
+color: #333;
+}
+
+/* Form Group Styling */
+.form-group {
+margin-bottom: 15px;
+text-align: left;
+}
+
+.form-group label {
+display: block;
+font-size: 1em;
+color: #333;
+margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+width: 100%;
+padding: 10px;
+font-size: 1em;
+border-radius: 5px;
+border: 2px solid #f7e6a4; /* Light yellow border */
+
+}
+
+.form-group textarea {
+resize: vertical;
+}
+
+/* Sign Now Button */
+#sign-now-button {
+margin-top: 20px;
+border: none;
+cursor: pointer;
+font-size: 1em;
+font-weight: bold;
+background-color: #512260; 
+color: #fff; /* White text */
+border-radius: 8px;
+padding: 12px 25px;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#sign-now-button:hover {
+  background-color: #9034af;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Error Styling */
+.error {
+border: 2px solid red;       /* Red border to highlight error */
+background-color: pink;      /* Light pink background for visibility */
+color: red;                  /* Red text color to indicate error */
+border-radius: 4px;          /* Optional: Round the corners slightly */
+padding: 5px;                /* Optional: Adds padding for a larger click area */
+}
+
+@keyframes shake {
+0%, 100% { transform: translateX(0); }
+25% { transform: translateX(-5px); }
+75% { transform: translateX(5px); }
+}
+
+.error {
+animation: shake 0.3s ease-in-out; /* Adds a shake effect on error */
+}
+
+/* Initial state for revealable elements */
+.revealable {
+  position: relative;                 /* Allows elements to move without affecting others */
+  transform: translateY(150px);       
+  opacity: 0;                         
+  transition: all 2s ease;            /* Matches the JavaScript animation object settings */
+}
+
+/* Revealed state when the active class is added */
+.revealable.active {
+  transform: translateY(0);           /* Resets the y translation to move element up */
+  opacity: 1;                         /* Makes the element fully visible */
+}
+
+/* Default state for Reduce Motion button */
+#reduce-motion-button {
+  background-color: #512260;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0px 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hover effect for Reduce Motion Button */
+#reduce-motion-button:hover {
+  background-color: #9034af; /* Darken background on hover */
+}
+
+/* The modal that covers the background and prevents user interactions */
+.modal {
+display: none; /* Hides the modal from view by default */
+position: fixed; /* Keeps the modal in one place */
+z-index: 2; /* Positions the modal on top of all other elements on the screen */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+background-color: rgba(0, 0, 0, 0.4); /* 40% opacity black - other elements can still be seen */
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+/* Box that contains all the content and images */
+.modal-content {
+color: black;
+text-align: center;
+font-size: 3rem;
+display: flex; /* Flexbox to center items */
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 20px;
+border-radius: 10px;
+background-color: #f7e6a4; /* Light yellow background */
+text-align: center;
+}
+
+.modal-content p {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #512260;
+}
+
+#thanks-modal-content {
+width: 25rem; /* Sets a default width for the text container */
+}
+
+#modal-text-container {
+display: flex; /* Flexbox to center the text and buttons */
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+/* Add a smooth transition to the modal image */
+#thanks-modal img {
+transition: transform 0.25s ease-in-out;
+height: 400px;
+}
+
+/* Style for the Close Modal Button */
+#close-modal-button {
+margin-top: 20px;
+padding: 10px 20px;
+background-color: rgb(15, 73, 166); /* Adjust to match your theme */
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 0.9em;
+transition: background-color 0.3s;
+}
+
+#close-modal-button:hover {
+background-color: rgb(10, 60, 140); /* Adjust hover color */
+}
+
+/* Add a smooth transition to the modal image */
+#thanks-modal img {
+transition: transform 0.25s ease-in-out;
+}
+

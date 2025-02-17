@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- My Activism Project: FutureSeeds - Sowing Educational Resources -->
+
+<html>
+<head>
+    <title>FutureSeeds</title>
+    <link rel="icon" href="/img/light-bulb-icon.png">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header-container">
+        <div class="header-item">
+            <nav id="navbar" class="navbar">
+                <div class="header-text-button-container">
+                    <div class="header-item">
+                        <img src="/img/icon.jpg" alt="FutureSeeds Logo">
+                    </div>
+                    <h1>FutureSeeds - Sowing Educational Resources</h1>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#statistics">Statistics</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                    <button id="theme-button">Toggle Dark Mode</button>
+                    <button id="reduce-motion-button">Reduce Motion</button>
+                </div>
+            </nav>
+        </div>
+    </header>     
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <div class="text-button-container">
+            <h2>Providing Educational Resources for Underserved Communities</h2>
+            <div class="header-button">
+                <button class="shadow-button" type="button">Join the Movement</button>
+                <button class="shadow-button" type="button">Get Involved!</button>
+            </div>
+        </div>
+
+        <h2 id="home">About My Topic</h2>
+        <p>The problem my topic covers is the lack of access to quality educational resources for students in underserved communities. This is a significant issue as it hampers academic success and limits future opportunities for these students.</p>
+
+        <!-- Importance -->
+        <h2>Why is it important?</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6NYWISpMznc?si=zzS6GXoCrit6ocE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Just like planting seeds and nurturing them with sunlight and water, we must invest in students by providing the educational resources they need to grow. Each child holds incredible potential, like a young seed waiting to become a strong tree. For these seeds to flourish, they need faith, encouragement, and access to knowledge.
+            <br></br>Educational resources—books, technology, mentorship—are the nutrients that help students expand their skills and reach new heights. When we provide these tools, we’re not just supporting individual growth; we’re cultivating future leaders and contributors to society. By investing in education, we’re building a forest of strong, resilient individuals who will stand tall, support their communities, and inspire others.</p>
+        <!-- Data -->
+        <h3 id="statistics">Data about my topic</h3>
+        <img class="statistics revealable" src="/img/statistics.png" alt="Data Chart" />
+        <h4>Statistics illustrating the educational gap and its impact on students</h4>
+        <ul class="revealable">
+            <li>Less than 15% of students have access to quality tutoring services.</li>
+            <li>15%-25% of students struggle with basic educational materials.</li>
+            <li>25%-35% face challenges in remote learning access.</li>
+            <li>35%-45% are disengaged from their education due to lack of resources.</li>
+            <li>Over 45% express a desire for more educational support.</li>
+        </ul>
+
+        <!-- Impact Section -->
+        <h2 id="impact">Impact!</h2>
+        <img class="impact revealable" src="/img/limiting-opportunties.png" alt="Impact Image" />
+        <h3>Impact on Academic Performance</h3>
+        <p>This problem can have lasting effects in academic performance, limiting career opportunities for students in these communities. Without intervention, the cycle of poverty continues.</p>
+
+        <img class="impact revealable" src="/img/economic-growth.png" alt="Impact Image 2" />
+        <h3>Impact on Community Development</h3>
+        <p>It can affect community development as a lack of educated individuals reduces the workforce's skill level, impacting economic growth.</p>
+
+        <img class="impact revealable" src="/img/social-inequality.png" alt="Impact Image 3" />
+        <h3>Impact on Social Inequality</h3>
+        <p>Additionally, it can lead to increased social inequality, as those without access to education fall further behind their peers.</p>  
+
+        <!-- Resources Section -->
+        <h2 id="resources">Helpful Resources</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/" target="_blank">w3schools</a></li>
+            <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
+        </ul>
+
+        <!-- Petition Section -->
+        <div class="petition revealable" id="petition">
+            <h2>Sign Our Petition 📢</h2>
+            <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+            <div class="petition-container">
+                <div class="petition-para">
+                    <p>Help us advocate for equal access to quality education for underserved communities. Your support can make a difference! Many students in underserved communities lack access to the basic educational resources they need to succeed. Without essential tools like textbooks, technology, and tutoring, these students face barriers that hold them back in school and limit their future opportunities.
+                    Education should be a right, not a privilege. By signing this petition, you’re supporting a call for equal access to quality educational resources for all students, regardless of their background. Let’s work together to ensure that every student has the chance to reach their full potential.</p>
+                </div>
+                <div class="signatures">
+                    <p>🖊️ DJ from Brooklyn supports this.</p>
+                    <p>🖊️ Amy from Queens supports this.</p>
+                    <p>🖊️ Teresa from Harlem supports this.</p>
+                </div>
+            </div>
+        
+            <!--- Sign Petition Form --->
+            <form id="sign-petition" title="sign-petition">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <!-- Hometown Field -->
+                <div class="form-group">
+                    <label for="hometown">Hometown:</label>
+                    <input type="text" id="hometown" name="hometown" placeholder="Enter your hometown" required>
+                </div>
+        
+                <!-- Email Field (Optional) -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+            </form>
+        
+            <!--- Sign Now Button --->
+            <button id="sign-now-button">Sign Now</button>
+        </div>
+        
+
+        <!-- News -->
+        <h2 id="news">Recent News</h2>
+        <a class="news" href="https://www.whitehouse.gov/briefing-room/presidential-actions/2024/07/17/executive-order-on-white-house-initiative-on-advancing-educational-equity-excellence-and-economic-opportunity-through-hispanic-serving-institutions/">
+            <article>
+                Initiatives on advancing Educational Equity
+            </article>
+        </a>
+        <p>The President has issued an order to strengthen the role of Hispanic-Serving Institutions (HSIs) in advancing educational equity and economic mobility. HSIs play a vital role in supporting Hispanic and Latino students, and the order aims to increase federal resources for these institutions, enhance their capacity to support students, and ensure their continued contribution to the nation's workforce and economic growth.</p>
+     </div>
+
+    <footer class="footer">
+        <p>
+            <a href="" target="_blank">Connect with us!</a> | 
+            <a href="#navbar" target="_blank">Quick Links</a>
+        </p>
+        <p>&copy; 2024 FutureSeeds. All rights reserved.</p>
+    </footer>
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <div id="modal-text-container">
+            <p id="thanks-modal-content">Thank you for signing our petition!</p>
+            <!-- Close Modal Button -->
+            <button id="close-modal-button">Close</button>
+        </div>
+        <img src="./img/celebration.jpg" alt="Celebration Image" />
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
